@@ -1,6 +1,8 @@
 import numpy as np
 import matplotlib.pyplot as plt
 
+# Just in case :)
+
 ############################################
 # Aufgabe 7a                               #
 ############################################
