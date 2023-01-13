@@ -1,6 +1,6 @@
 # HM Scripts
 
-Personal scripts for the Higher Mathematics course at the Zurich University of Applied Sciences.
+Scripts for the Higher Mathematics course at the Zurich University of Applied Sciences.
 
 ## Structure
 
@@ -14,6 +14,8 @@ There are two main folders:
   the solution for the given task.
 
 ## Usage
+
+For real exams, use the `exam_2022_untracked` directory.
 
 ### Numpy
 
