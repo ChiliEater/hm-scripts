@@ -37,7 +37,7 @@ def qr_iter(a: sp.Matrix, iterations: int = 100, precision: int = -1, output: bo
 
 def qr_eigen(a: sp.Matrix, iterations: int = 100, precision: int = -1, output: bool = False):
     n = a.rows
-    a_iter, _ = qr_iter(a, iterations=iterations, precision=precision, output=output)
+    a_iter, p_iter = qr_iter(a, iterations=iterations, precision=precision, output=output)
 
     # extract eigenvalues
     eigenvalues = []
@@ -60,4 +60,4 @@ def qr_eigen(a: sp.Matrix, iterations: int = 100, precision: int = -1, output: b
         roots = sp.solve(poly, l)
         eigenvalues.extend(roots)
 
-    return eigenvalues
+    return eigenvalues, p_iter
