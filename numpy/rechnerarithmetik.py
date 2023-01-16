@@ -33,6 +33,8 @@ def all_numbers_unsigned(mantsse_length, exponent_length, base=2):
 def condition(func, derivative, x):
     return abs(derivative(x)) * abs(x) / abs(func(x))
 
+
+print(eps(10, 16))
 f = lambda x: x ** 2 * np.sin(x)
 fd = lambda x: 2 * x * np.sin(x) + x ** 2 * np.cos(x)
 print(condition(f, fd, np.pi / 3))
