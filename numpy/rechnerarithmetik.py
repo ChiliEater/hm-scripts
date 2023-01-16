@@ -17,7 +17,7 @@ def x_min(base, e_min):
 
 # Calculates the largest relative error when rounding a floating point number to a given number of digits
 def eps(base, n):
-    return base ** (1 - n)
+    return 0.5 * base ** (1 - n)
 
 
 # Calculates the amount of numbers given the length of a mantissa and the length of an eponent (signed)
@@ -35,4 +35,4 @@ def condition(func, derivative, x):
 
 f = lambda x: x ** 2 * np.sin(x)
 fd = lambda x: 2 * x * np.sin(x) + x ** 2 * np.cos(x)
-print(condition(f, fd, 0.000000001))
+print(condition(f, fd, np.pi / 3))
