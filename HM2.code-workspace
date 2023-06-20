@@ -1,0 +1,21 @@
+{
+    "folders": [
+        {
+            "name": "Custom Flo Scripts",
+            "path": "./"
+        },
+        {
+            "name": "Sebi Scripts",
+            "path": "../HM2-Test-Scripts"
+        },
+        {
+            "name": "Tasks",
+            "path": "../hm2-tasks"
+        },
+        {
+            "name": "Summary",
+            "path": "../ZHAW-Summary"
+        }
+    ],
+    "settings": {}
+}
